@@ -1,0 +1,109 @@
+:root {
+  --color-one: #0d1321;
+  --color-two: #1d2d44;
+  --color-three: #3e5c76;
+  --color-four: #748cab;
+  --color-light: #f0ebd8;
+
+  --color-text: rgba(0, 0, 0, 200);
+  --color-border: #3f3f46;
+
+  color: var(--color-text);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: lighter;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-style: normal;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
+
+  padding-bottom: 15%;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  max-width: 600px;
+  margin: auto;
+}
+
+.mainDiv {
+  background-color: var(--color-one);
+}
+
+.navBar {
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+
+  :last-child {
+    margin-right: 0;
+  }
+
+  a {
+    margin-right: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.eduTitle {
+  font-size: 1.8rem;
+}
+
+.subHeader {
+  font-size: 3rem;
+}
+
+.subSubHeader {
+  font-size: 2.1rem;
+}
+
+.subScript {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.subAbout {
+  font-size: 1.3rem;
+}
+
+#landingContainer {
+  > * {
+    margin-top: 2rem;
+  }
+
+  > :first-child {
+    margin-top: 1rem;
+  }
+}
+
+#landingName {
+  font-size: 5rem;
+  font-weight: 150;
+}
+
+#projectsContainer {
+  > * {
+    margin-top: 1rem;
+  }
+}
