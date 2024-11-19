@@ -22,7 +22,7 @@ export default function Landing() {
           Bachelor of Science in Computer Science and Mathematics
         </p>
         <p className="subScript">University of Wisconsin Parkside</p>
-        <p className="eduTitle">AWS Certified Developer – Associate</p>
+        <p className="eduTitle">AWS Certified Developer - Associate</p>
         <p className="eduTitle">CompTIA A+</p>
       </div>
 
