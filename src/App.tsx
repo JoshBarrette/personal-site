@@ -2,7 +2,7 @@ import Landing from "./components/Landing";
 import NavBar from "./components/NavBar";
 
 function App() {
-  fetch("josh.barrette.dev/api");
+  fetch("https://josh.barrette.dev/api");
 
   return (
     <>

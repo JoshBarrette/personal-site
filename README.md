@@ -1,3 +1,5 @@
-Just my personal site
+# Just [my personal site](https://josh.barrette.dev)
 
-As it stands this doesn't need to be a react app but I plan on expanding on it in the future
+This was made to follow the [AWS Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/).
+
+Made with React in TS and Vite
