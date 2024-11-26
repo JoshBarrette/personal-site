@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 export default function Landing() {
   return (
     <div id="landingContainer">
+      <div id="background"></div>
       <p id="landingName">Josh Barrette</p>
 
       <div>
@@ -28,6 +29,15 @@ export default function Landing() {
         <p className="eduTitle">CompTIA A+</p>
       </div>
 
+      <Projects />
+    </div>
+  );
+}
+
+function Projects() {
+  return (
+    <>
+      <div id="projTop" className="svgWave"></div>
       <div id="projects">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -115,6 +125,6 @@ export default function Landing() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </>
   );
 }

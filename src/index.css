@@ -90,6 +90,16 @@ body {
   font-size: 1.3rem;
 }
 
+.svgWave {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+
 #navHome {
   flex-grow: 1;
   display: flex;
@@ -118,7 +128,7 @@ body {
 }
 
 #bottomNav {
-  height: 25rem;
+  height: 15rem;
   background-color: var(--color-light);
   color: var(--color-one);
   display: flex;
@@ -131,8 +141,6 @@ body {
 
 #bottomNavContent {
   margin-top: 2rem;
-  /* max-width: 600px; */
-  /* width: 100%; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -143,10 +151,11 @@ body {
 }
 
 #landingContainer {
+  position: relative;
+
   > * {
     margin: auto;
     margin-top: 2rem;
-
     max-width: 600px;
   }
 
@@ -155,16 +164,41 @@ body {
   }
 }
 
+#background {
+  aspect-ratio: 960/540;
+  filter: blur(10px);
+  position: absolute;
+  z-index: -1;
+  background-image: url(hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 4rem;
+  left: 20%;
+  width: 100%;
+  height: 35%;
+}
+
+#projTop {
+  aspect-ratio: 960/200;
+  background-image: url(proj-top.svg);
+}
+
+#footerTop {
+  aspect-ratio: 960/200;
+  background-image: url(footer-top.svg);
+}
+
 #projects {
   width: 100%;
   max-width: 100%;
   background-color: var(--color-two);
-  padding-top: 2rem;
+  padding-top: 0;
   padding-bottom: 4rem;
+  margin-top: 0;
 
   > * {
     margin: auto;
-
     max-width: 600px;
   }
 }

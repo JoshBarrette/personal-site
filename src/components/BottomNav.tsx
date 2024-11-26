@@ -6,6 +6,7 @@ export default function BottomNav() {
 
   return (
     <>
+      <div id="footerTop" className="svgWave"></div>
       <motion.div id="bottomScroll" style={{ scaleX: scrollYProgress }} />
       <div id="bottomNav">
         <div id="bottomNavContent">
