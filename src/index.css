@@ -169,7 +169,7 @@ body {
   filter: blur(10px);
   position: absolute;
   z-index: -1;
-  background-image: url(hero.svg);
+  background-image: url(/hero.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,12 +181,12 @@ body {
 
 #projTop {
   aspect-ratio: 960/200;
-  background-image: url(proj-top.svg);
+  background-image: url(/proj-top.svg);
 }
 
 #footerTop {
   aspect-ratio: 960/200;
-  background-image: url(footer-top.svg);
+  background-image: url(/footer-top.svg);
 }
 
 #projects {
