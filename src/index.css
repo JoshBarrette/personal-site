@@ -5,7 +5,7 @@
   --color-four: #748cab;
   --color-light: #f0ebd8;
 
-  --color-text: rgba(0, 0, 0, 200);
+  --color-text: var(--color-light);
   --color-border: #3f3f46;
 
   color: var(--color-text);
@@ -28,17 +28,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-light);
-
-  padding-bottom: 15%;
+  background-color: var(--color-one);
 }
 
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
-
-  max-width: 600px;
-  margin: auto;
 }
 
 .mainDiv {
@@ -49,6 +44,12 @@ body {
   font-size: larger;
   display: flex;
   flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+
+  max-width: 600px;
+  margin: auto;
 
   :last-child {
     margin-right: 0;
@@ -72,6 +73,8 @@ body {
 
 .subHeader {
   font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .subSubHeader {
@@ -83,13 +86,68 @@ body {
   font-style: italic;
 }
 
-.subAbout {
+.subSummary {
   font-size: 1.3rem;
+}
+
+#navHome {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+
+  :first-child {
+    margin-right: 0.2rem;
+  }
+}
+
+#bottomScroll {
+  background-color: var(--color-four);
+  bottom: 0;
+  left: 0;
+  transform-origin: 0%;
+  width: 100%;
+  height: 8px;
+  position: fixed;
+  opacity: 0;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #bottomScroll {
+    opacity: 1;
+  }
+}
+
+#bottomNav {
+  height: 25rem;
+  background-color: var(--color-light);
+  color: var(--color-one);
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: var(--color-one);
+  }
+}
+
+#bottomNavContent {
+  margin-top: 2rem;
+  /* max-width: 600px; */
+  /* width: 100%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    margin-bottom: 0.2rem;
+  }
 }
 
 #landingContainer {
   > * {
+    margin: auto;
     margin-top: 2rem;
+
+    max-width: 600px;
   }
 
   > :first-child {
@@ -97,13 +155,49 @@ body {
   }
 }
 
+#projects {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-two);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  > * {
+    margin: auto;
+
+    max-width: 600px;
+  }
+}
+
 #landingName {
   font-size: 5rem;
   font-weight: 150;
+  text-align: center;
 }
 
 #projectsContainer {
   > * {
     margin-top: 1rem;
+  }
+}
+
+#copyModal {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }

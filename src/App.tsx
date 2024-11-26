@@ -1,3 +1,4 @@
+import BottomNav from "./components/BottomNav";
 import Landing from "./components/Landing";
 import NavBar from "./components/NavBar";
 
@@ -9,6 +10,7 @@ function App() {
       <div>
         <NavBar />
         <Landing />
+        <BottomNav />
       </div>
     </>
   );
