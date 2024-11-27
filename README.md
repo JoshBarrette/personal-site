@@ -2,4 +2,4 @@
 
 This was made to follow the [AWS Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/).
 
-Made with React in TS and Vite
+Made with React in TS, Vite, and SVGs generated with https://haikei.app/.
