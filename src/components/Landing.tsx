@@ -3,13 +3,16 @@ import { motion } from "motion/react";
 export default function Landing() {
   return (
     <div id="landingContainer">
-      <div id="background"></div>
-      <p id="landingName" className="landingContent">
-        Josh Barrette
-      </p>
+      <div id="hero">
+        <div id="background"></div>
+        <p id="landingName" className="landingContent">
+          Josh Barrette
+        </p>
 
-      <Summary />
+        <Summary />
+      </div>
 
+      <div id="eduTop" className="svgWave"></div>
       <Education />
 
       <div id="projTop" className="svgWave"></div>
@@ -37,21 +40,23 @@ function Summary() {
 
 function Education() {
   return (
-    <div className="landingContent">
-      <p className="subHeader">Education and Certifications</p>
-      <p className="eduTitle">
-        Bachelor of Science in Computer Science and Mathematics
-      </p>
-      <p className="subScript">University of Wisconsin Parkside</p>
-      <p className="eduTitle">AWS Certified Developer - Associate</p>
-      <p className="eduTitle">CompTIA A+</p>
+    <div id="education" className="contentSection landingContent">
+      <div className="landingContent">
+        <p className="subHeader">Education and Certifications</p>
+        <p className="eduTitle">
+          Bachelor of Science in Computer Science and Mathematics
+        </p>
+        <p className="subScript">University of Wisconsin Parkside</p>
+        <p className="eduTitle">AWS Certified Developer - Associate</p>
+        <p className="eduTitle">CompTIA A+</p>
+      </div>
     </div>
   );
 }
 
 function Projects() {
   return (
-    <div id="projects" className="landingContent">
+    <div id="projects" className="contentSection landingContent">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

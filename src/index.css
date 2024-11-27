@@ -32,16 +32,12 @@ p {
 }
 
 #landingContainer {
-  position: relative;
+  /* position: relative; */
 
   > * {
     margin: auto;
     margin-top: 2rem;
     max-width: 600px;
-  }
-
-  > :first-child {
-    margin-top: 1rem;
   }
 
   > :last-child {
@@ -176,26 +172,57 @@ p {
   }
 }
 
+#hero {
+  height: 600px;
+
+  > * {
+    margin-top: 2rem;
+    max-width: 600px;
+  }
+
+  > :first-child {
+    margin-top: 1rem;
+  }
+}
+
 #background {
   aspect-ratio: 960/540;
   filter: blur(10px);
   position: absolute;
+  left: -10rem;
+  top: 0;
   margin: auto;
   z-index: -1;
   background-image: url(/hero.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  top: 4rem;
+  top: 10rem;
   left: 20%;
   width: 960px;
   height: 540px;
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    left: 0;
+    top: 15rem;
+    width: 100%;
+  }
 }
 
 #projTop {
   aspect-ratio: 900/50;
   height: 50px;
+  margin-top: 0;
+  background-color: var(--color-four);
   background-image: url(/proj-top.svg);
+}
+
+#eduTop {
+  aspect-ratio: 900/50;
+  height: 50px;
+  margin-top: 0;
+  background-color: var(--color-one);
+  background-image: url(/edu-top.svg);
 }
 
 #footerTop {
@@ -209,7 +236,21 @@ p {
   width: 100%;
   max-width: 100%;
   background-color: var(--color-two);
-  padding-top: 0;
+  padding-top: 4rem;
+  margin-top: 0;
+  padding-bottom: 4rem;
+
+  > * {
+    margin: auto;
+    max-width: 600px;
+  }
+}
+
+#education {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-four);
+  padding-top: 4rem;
   margin-top: 0;
   padding-bottom: 4rem;
 
